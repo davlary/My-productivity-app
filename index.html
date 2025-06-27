@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dav_Portfolio</title>
+    <link rel="stylesheet" href="../style.css" />
+    <!-- <link rel="stylesheet" href="style1.css"/> -->
+  </head>
+  <body>
+    <div class="flex-nav">
+      <h2 class="name">
+        <span class="brand">Dav</span><span class="brand-2">Lary</span>
+      </h2>
+      <div class="nav">
+        <nav>
+          <ul class="link-container">
+            <li><a href="#" class="link-item active">Home</a></li>
+            <li><a href="#" class="link-item">Service</a></li>
+            <li><a href="#" class="link-item">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="brand-quote">
+        <img
+          src="../Img/Clarity Stream@1-1366x645.jpg"
+          class="brand-img"
+          alt="An image a productivity quote"
+        />
+
+        <p class="sub-theme">
+          Focus while in the midst of distractions and unlock your potential.
+        </p>
+      </div>
+      <div class="task-app">
+        <div class="header">
+          <h3 class="outline">Start with a SMART Goal...</h3>
+          <p class="date"></p>
+        </div>
+
+        <div class="todo-input">
+          <input
+            type="text"
+            id="task-input"
+            class="task-input"
+            placeholder="Type your Goals..."
+          />
+          <button class="add-input" id="add-input">Add &gt;</button>
+        </div>
+        <div class="filters">
+          <span class="filter active1" data-filter="all">All</span>
+          <span class="filter" data-filter="all">Active</span>
+          <span class="filter" data-filter="all">Completed</span>
+        </div>
+        <div class="empty-list hidden"></div>
+        <div class="todos-container">
+          <!-- Javascript will create the element to place the value -->
+          <ul class="item-list"></ul>
+        </div>
+        <footer class="">
+          <p id="items-left">0 items left</p>
+          <button class="clear-complete">Clear completed</button>
+        </footer>
+      </div>
+    </div>
+  </body>
+  <script src="../main.js"></script>
+</html>
