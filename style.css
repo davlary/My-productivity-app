@@ -76,20 +76,23 @@ a:hover {
   min-height: 50%;
   overflow: hidden;
 }
+.brand-quote {
+  position: relative;
+  width: 100%;
+}
+.brand-quote p {
+  position: absolute;
+  top: 90%;
+  z-index: 2;
+  transform: translateX(40%);
+  width: 500px;
+  color: white;
+  align-items: center;
+}
 .theme {
   margin-bottom: 10px;
 }
-.sub-theme {
-  margin-bottom: 10px;
-  width: 500px;
-  color: white;
-  position: absolute;
-  top: 60%;
-  transform: translateX(40%);
-  align-items: center;
-  z-index: 2;
-  overflow: hidden;
-}
+
 .content {
   margin-bottom: 10px;
 }
@@ -101,13 +104,13 @@ input {
 button {
   border-radius: 8px;
   padding: 5px;
-  background: red;
+  background: coral;
   border: none;
   color: white;
   margin-bottom: 10px;
 }
 button:hover {
-  background-color: coral;
+  background-color: red;
 }
 img {
   object-fit: cover;
@@ -115,7 +118,7 @@ img {
   height: 100%;
 }
 .header .outline {
-  background: linear-gradient(to right, red, orange, yellow);
+  background: darkgrey;
   padding: 10px 15px;
   margin-bottom: 5px;
   font-weight: 600;
@@ -127,19 +130,27 @@ img {
 }
 .task-app {
   width: 100%;
+  /* display: flex; */
   max-width: 500px;
   background-color: #fff;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0, 10px, 25px rgba(0, 0, 0, 0.4);
+  margin: 25px auto;
+  align-items: center;
 }
 
 .todo-input {
+  flex: 1;
   padding: 10px 15px;
   background-color: lightgray;
   display: flex;
   border-bottom: 1px solid lightslategray;
   gap: 10px;
+}
+.todo-input:focus {
+  box-shadow: 2px, 2px rgba(34, 55, 70, 3);
+  outline: none;
 }
 .item-list {
   display: flex;
@@ -156,5 +167,27 @@ img {
 }
 .todo-input input:focus {
   outline: none;
-  border-color: ;
+  border-color: grey;
+}
+.checkbox {
+  display: flex;
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+  cursor: pointer;
+}
+.todo-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+}
+.items-left {
+  margin-left: 10px;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
 }
