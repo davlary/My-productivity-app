@@ -103,11 +103,17 @@ input {
 }
 button {
   border-radius: 8px;
+  margin-top: 5px;
+  width: 40px;
+  height: 40px;
   padding: 5px;
   background: coral;
   border: none;
   color: white;
   margin-bottom: 10px;
+  font-size: 24px;
+  align-items: center;
+  text-align: center;
 }
 button:hover {
   background-color: red;
@@ -172,10 +178,33 @@ img {
 .checkbox {
   display: flex;
   margin-left: 10px;
-  width: 20px;
+  width: 25px;
   height: 20px;
   opacity: 1;
   cursor: pointer;
+}
+.checkmark {
+  display: inline-block;
+  width: 15px;
+  height: 19px;
+  position: absolute;
+}
+.checkbox:checked + .checkmark {
+  background-color: green;
+  border-color: green;
+}
+.task-input-text {
+  display: flex;
+  flex: 1;
+}
+.checkbox:checked + .checkmark::after {
+  content: "";
+  top: 583px;
+  left: 214px;
+  border: 6px solid black;
+  border-width: 0, 2px, 2px, 0;
+  transform: rotate(45deg);
+  transition: all 0.5s;
 }
 .todo-item {
   display: flex;
@@ -189,5 +218,5 @@ img {
 .footer {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 5px;
+  margin: 10px auto;
 }

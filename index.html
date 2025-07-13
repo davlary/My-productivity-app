@@ -43,13 +43,12 @@
 
         <div class="todo-input">
           <input
-            form="post"
             type="text"
             id="task-input"
             class="task-input"
             placeholder="Type your Goals..."
           />
-          <button class="add-btn" id="add-btn">Add &gt;</button>
+          <button class="add-btn" id="add-btn">+</button>
         </div>
         <div class="filters">
           <span class="filter active1" data-filter="all">All</span>
@@ -59,15 +58,16 @@
 
         <div class="todos-container">
           <!-- Javascript will create the element to place the value -->
-          <ul class="item-list">
+          <ul class="todo-list">
             <li class="todo-item">
               <label>
                 <input type="checkbox" class="checkbox" />
                 <span class="checkmark"></span>
               </label>
-              <span>Write a page</span>
+              <span class="todo-text-input">Write a page</span>
+              <span class="delete-btn"> </span>
+              <i class="fas fa-times"><i>
             </li>
-            <span class="delete-btn"> </span>
           </ul>
           <div class="empty-list hidden"></div>
         </div>
